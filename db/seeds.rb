@@ -10,9 +10,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 676.times do
-  Product.create(
+  product = Product.create(
     title: Faker::Commerce.product_name,
     price: Faker::Commerce.price,
     stock_quantity: Faker::Number.number(digits: 4)
   )
 end
+
+puts "Product: #{Product.count}"
