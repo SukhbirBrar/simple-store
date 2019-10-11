@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem "smarter_csv"
 gem 'faker'
 # gem 'faker', :git => 'https://github.com/faker-ruby/faker.git'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
